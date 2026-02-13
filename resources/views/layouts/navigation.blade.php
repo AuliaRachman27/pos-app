@@ -16,7 +16,13 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                     <x-nav-link :href="route('products.index')" :active="request()->routeIs('products.*')">
-                        {{ __('Products') }}
+                        {{ __('Produk') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('transactions.create')" :active="request()->routeIs('transactions.*')">
+                        {{ __('Transaksi') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('transactions.index')">
+                        Riwayat
                     </x-nav-link>
 
                 </div>
