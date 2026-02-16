@@ -1,0 +1,15 @@
+Basic PoS Software License
+
+This software is licensed to one business entity only.
+
+You are allowed to:
+- Use the software for commercial business purposes.
+- Install the software on one server.
+
+You are NOT allowed to:
+- Redistribute the source code.
+- Resell or claim ownership of this software.
+- Modify and sell it as your own product.
+
+Copyright © 2026 URBAN Techno Creative
+All rights reserved.
