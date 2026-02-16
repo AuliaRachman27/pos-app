@@ -7,9 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p> -->
 
-## About Basic Point of Sales
+## About URBANPOS
 
-Basic Point of Sales is a web application Simple & Reliable Point of Sale System for Small Businesses.
+URBANPOS is a Simple & Reliable Point of Sales System for Small Businesses.
 
 ## Features
 
