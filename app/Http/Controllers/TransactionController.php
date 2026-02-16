@@ -79,8 +79,10 @@ class TransactionController extends Controller
 
             DB::commit();
 
-            return redirect()->route('transactions.create')
-                ->with('success', 'Transaksi berhasil!');
+            return redirect()->route('transactions.receipt', $transaction->id);
+
+            // return redirect()->route('transactions.create')
+            //     ->with('success', 'Transaksi berhasil!');
 
         } catch (\Exception $e) {
 
@@ -95,6 +97,12 @@ class TransactionController extends Controller
         ->findOrFail($id);
         
         return view('transactions.show', compact('transaction'));
+    }
+
+    public function receipt(Transaction $transaction)
+    {
+        $transaction->load('items.product');
+        return view('transaction.receipt', compact('transaction'));
     }
 
 }

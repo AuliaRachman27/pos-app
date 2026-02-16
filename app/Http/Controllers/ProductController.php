@@ -36,6 +36,20 @@ class ProductController extends Controller
             'stock' => 'required|integer|min:0',
         ]);
 
+        // =============================
+        // Trial Version Limitation
+        // =============================
+        if(env('APP_TRIAL') == true){
+            $limit = env('TRIAL_PRODUCT_LIMIT', 5);
+            $currentCount = Product::count();
+
+            if($currentCount >= $limit){
+                return redirect()
+                ->route('products.index')
+                ->with('error', 'Versi trial dibatasi maksimal '.$limit.'produk.');
+            }
+        }
+
         Product::create($request->all());
 
         return redirect()
