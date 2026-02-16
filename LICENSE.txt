@@ -1,4 +1,4 @@
-Basic PoS Software License
+URBANPOS Software License
 
 This software is licensed to one business entity only.
 
